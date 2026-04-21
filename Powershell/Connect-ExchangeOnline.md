@@ -1,4 +1,4 @@
 ```
-Connect-ExchangeOnline -DelegatedOrganization Kodatech.com -UserPrincipalName your.email@cyburity.com -ShowProgress $true
+Connect-ExchangeOnline -DelegatedOrganization {DOMAIN} -UserPrincipalName {EMAIL} -ShowProgress $true
 	Import-Module ExchangeOnlineManagement
 ```
