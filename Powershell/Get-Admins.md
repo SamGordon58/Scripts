@@ -1,0 +1,3 @@
+```
+Get-LocalGroupMember -Group "Administrators"
+```
