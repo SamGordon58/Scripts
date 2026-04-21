@@ -1,9 +1,9 @@
 ```
 Write-Host "connecting to O365..."
-Connect-ExchangeOnline -UserPrincipalName sam.gordon@cyburity.com -DelegatedOrganization trivector.us
+Connect-ExchangeOnline -UserPrincipalName {EMAIL} -DelegatedOrganization {DOMAIN}
 Write-Host "connected"
 
-$Username = "Steve.Jefferys@AppliedITServices.com" 
+$Username = "{USER EMAIL}" 
 
 Write-Host "Searching Groups . . . "
 $DistributionGroups= Get-DistributionGroup | where { (Get-DistributionGroupMember $_.Name | foreach {$_.PrimarySmtpAddress}) -contains "$Username"}
