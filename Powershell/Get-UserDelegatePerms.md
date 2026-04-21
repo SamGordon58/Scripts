@@ -1,3 +1,2 @@
-```
- Get-Mailbox -ResultSize Unlimited | Get-MailboxPermission -User j.lutz@marinfed.com | Format-Table Identity, AccessRights, Denyc
-```
+
+ Get-Mailbox -ResultSize Unlimited | Get-MailboxPermission -User {EMAIL} | Format-Table Identity, AccessRights, Denyc
