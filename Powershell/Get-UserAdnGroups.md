@@ -1,5 +1,5 @@
 ```
-$Groups = Get-ADGroup -Properties * -Filter * -SearchBase "OU=Groups,OU=OUs,DC=resolutionllc,DC=biz" 
+$Groups = Get-ADGroup -Properties * -Filter * -SearchBase "{OU StRUCTURE}" 
 $Results = foreach( $Group in $Groups ){
 
  Get-ADGroupMember -Identity $Group | foreach {
